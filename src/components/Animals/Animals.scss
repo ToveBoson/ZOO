@@ -1,0 +1,31 @@
+.animalsHtml {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(145, 183, 145);
+    height: 490px;
+    width: 400px;
+
+    &__name {
+      color: white;
+      text-align: center;
+    }
+
+    &__img {
+      height: 300px;
+      width: 300px;
+      cursor: pointer;
+    }
+  }
+}
+
+.containerAnimals {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}

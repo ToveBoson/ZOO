@@ -1,0 +1,36 @@
+.details {
+  width: 100%;
+  height: auto;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+  }
+
+  &__img {
+    height: 400px;
+    width: 400px;
+  }
+
+  &__desc {
+    width: 900px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 100px;
+    height: 40px;
+    background-color: pink;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  &__fedOrNot {
+    padding-bottom: 30px;
+  }
+}
