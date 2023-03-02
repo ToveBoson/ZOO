@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { IAnimalResponse } from "../../models/IAnimalResponse";
 import errorImg from "../../assets/brokenimg.png";
+import "../Animal/Animal.scss";
 
 interface IAnimalProps {
   animal: IAnimalResponse;

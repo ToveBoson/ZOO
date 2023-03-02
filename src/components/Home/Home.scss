@@ -1,0 +1,18 @@
+.home {
+  height: 100vh;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__welcome {
+      &__info {
+      }
+
+      &__img {
+        width: 570px;
+        height: 500px;
+      }
+    }
+  }
+}

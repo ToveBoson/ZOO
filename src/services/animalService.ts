@@ -1,6 +1,5 @@
 import axios from "axios";
 import { IAnimalResponse } from "../models/IAnimalResponse";
-import { IAnimalSmallResponse } from "../models/IAnimalSmallResponse";
 import { IApiResponse } from "../models/IApiResponse";
 
 export async function getAnimals() {

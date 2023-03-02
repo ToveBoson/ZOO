@@ -4,6 +4,7 @@ import { AnimalDetails } from "./components/AnimalDetails/AnimalDetails";
 import { Animals } from "./components/Animals/Animals";
 import { Home } from "./components/Home/Home";
 import { NotFound } from "./components/NotFound/NotFound";
+// import { getAnimalById } from "./services/animalService";
 
 export const router = createBrowserRouter([
   {

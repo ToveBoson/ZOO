@@ -1,9 +1,3 @@
-import { Animal } from "../../models/Animal";
-
-interface IAnimalProps {
-  animal: Animal[];
-}
-
-export const Feed = (props: IAnimalProps) => {
+export const Feed = () => {
   return <div></div>;
 };
