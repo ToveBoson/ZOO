@@ -1,4 +1,5 @@
 import zooImg from "../../assets/zoopic.jpg";
+
 import "../Home/Home.scss";
 
 export const Home = () => {

@@ -23,9 +23,32 @@ export const Animals = () => {
     getData();
   });
 
+  let notice = "";
+
   let animalsHtml = animals.map((animal) => {
+    let lastFedTime = localStorage.getItem(`animal-${animal.id}`);
+
+    if (lastFedTime) {
+      let lastFed = new Date(lastFedTime).getTime();
+
+      let now = new Date().getTime();
+      const timeDiff = (now - lastFed) / 1000 / 60 / 60;
+
+      if (timeDiff > 4) {
+        notice += `${animal.name} behöver matas. `;
+      }
+    } else {
+      notice += `${animal.name} behöver matas. `;
+    }
     return <Animal animal={animal} key={animal.id}></Animal>;
   });
 
-  return <div className="containerAnimals">{animalsHtml}</div>;
+  return (
+    <div className="containerAnimals">
+      {animalsHtml}
+      <div className="containerAnimals__needFood">
+        <p>{notice} </p>
+      </div>
+    </div>
+  );
 };
